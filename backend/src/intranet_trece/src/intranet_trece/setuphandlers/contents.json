@@ -5,9 +5,6 @@
     "id": "images",
     "title": "Images",
     "description": "Image bank.",
-    "_transitions": [
-      "publish"
-    ],
     "_allowed_types": [
       "Image"
     ],
