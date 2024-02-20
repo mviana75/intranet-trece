@@ -37,6 +37,10 @@
         title="Cria tipos de conteúdo Área e Pessoa"
         import_steps="typeinfo"
         />
+    <upgradeStep
+        title="Cria áreas para tipos de conteúdo Área e Pessoa"
+        handler=".v20240220001.cria_estrutura"
+        />
   </genericsetup:upgradeSteps>
 
 </configure>
