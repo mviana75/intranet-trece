@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<registry>
+  <records interface="plone.base.interfaces.controlpanel.IMailSchema" prefix="plone" purge="false">
+    <value key="email_from_name">Nova - Intranet TRE-CE</value>
+    <value key="smtp_host">smtp.tre-ce.jus.brrrrrrr</value>
+    <value key="smtp_port">99</value>
+  </records>
+</registry>

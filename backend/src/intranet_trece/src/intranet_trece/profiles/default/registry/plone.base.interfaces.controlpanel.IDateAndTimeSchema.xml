@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<registry>
+  <records interface="plone.base.interfaces.controlpanel.IDateAndTimeSchema" prefix="plone" purge="false">
+    <value key="available_timezones">
+      <element>America/Fortaleza</element>
+    </value>
+    <value key="first_weekday">6</value>
+    <value key="portal_timezone">America/Fortaleza</value>
+  </records>
+</registry>

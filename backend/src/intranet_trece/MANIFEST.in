@@ -1,0 +1,6 @@
+graft src/intranet_trece
+graft docs
+include *.rst
+include *.md
+include *.cfg
+global-exclude *.pyc

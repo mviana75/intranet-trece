@@ -1,0 +1,42 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    >
+
+  <!-- Example upgrade step
+  <genericsetup:upgradeSteps
+      profile="intranet_trece:default"
+      source="20240219001"
+      destination="20230229001"
+      >
+    <genericsetup:upgradeDepends
+        title="Update registry value"
+        import_steps="plone.app.registry"
+        />
+  </genericsetup:upgradeSteps>
+  -->
+
+  <genericsetup:upgradeSteps
+        profile="intranet_trece:default"
+        source="20240219001"
+        destination="20240219002"
+        >
+      <genericsetup:upgradeDepends
+          title="Altera timezone para America/Fortaleza"
+          import_steps="plone.app.registry"
+          />
+    </genericsetup:upgradeSteps>
+
+
+  <genericsetup:upgradeSteps
+      profile="intranet_trece:default"
+      source="20240219002"
+      destination="20240220001"
+      >
+    <genericsetup:upgradeDepends
+        title="Cria tipos de conteúdo Área e Pessoa"
+        import_steps="typeinfo"
+        />
+  </genericsetup:upgradeSteps>
+
+</configure>

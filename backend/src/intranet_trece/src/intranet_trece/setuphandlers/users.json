@@ -1,0 +1,19 @@
+{
+  "portal": [
+    {
+      "email": "mviana75@gmail.com",
+      "properties": {
+        "fullname": "Intranet TRE-CE",
+        "location": "World"
+      },
+      "groups": [
+      ],
+      "roles": [
+        "Member"
+      ],
+      "username": "intranet-trece"
+    }
+  ],
+    "team": [
+  ]
+}
