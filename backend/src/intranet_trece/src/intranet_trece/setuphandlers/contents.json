@@ -8,6 +8,8 @@
     "_allowed_types": [
       "Image"
     ],
+
+    
     "exclude_from_nav": true
   },
   {
