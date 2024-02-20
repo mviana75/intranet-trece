@@ -1,6 +1,8 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <registry>
-  <records interface="plone.base.interfaces.controlpanel.ISiteSchema" prefix="plone">
+  <records interface="plone.base.interfaces.controlpanel.ISiteSchema"
+           prefix="plone"
+  >
     <value key="robots_txt">Sitemap: {portal_url}/sitemap.xml.gz
 
 # Define access-restrictions for robots/spiders

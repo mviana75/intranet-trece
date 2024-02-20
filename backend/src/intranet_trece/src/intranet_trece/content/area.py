@@ -3,6 +3,7 @@ from plone.supermodel.model import Schema
 from zope import schema
 from zope.interface import implementer
 
+
 class IArea(Schema):
     """Definição de uma Área no TRE-CE."""
 

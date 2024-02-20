@@ -17,15 +17,15 @@
   -->
 
   <genericsetup:upgradeSteps
-        profile="intranet_trece:default"
-        source="20240219001"
-        destination="20240219002"
-        >
-      <genericsetup:upgradeDepends
-          title="Altera timezone para America/Fortaleza"
-          import_steps="plone.app.registry"
-          />
-    </genericsetup:upgradeSteps>
+      profile="intranet_trece:default"
+      source="20240219001"
+      destination="20240219002"
+      >
+    <genericsetup:upgradeDepends
+        title="Altera timezone para America/Fortaleza"
+        import_steps="plone.app.registry"
+        />
+  </genericsetup:upgradeSteps>
 
 
   <genericsetup:upgradeSteps

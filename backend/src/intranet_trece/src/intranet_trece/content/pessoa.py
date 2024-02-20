@@ -6,8 +6,10 @@ from z3c.relationfield.schema import RelationList
 from zope import schema
 from zope.interface import implementer
 
+
 class IPessoa(Schema):
     """Definição de uma pessoa no TRE-CE."""
+
     # Informações básicas
     title = schema.TextLine(title="Nome Completo", required=True)
     description = schema.Text(title="Biografia", required=False)
@@ -19,13 +21,8 @@ class IPessoa(Schema):
         required=False,
         default=[],
         value_type=RelationChoice(
-            title="Área",
-            vocabulary=StaticCatalogVocabulary(
-                {
-                    "portal_type": ["Area"]
-                }
-            )
-        )
+            title="Área", vocabulary=StaticCatalogVocabulary({"portal_type": ["Area"]})
+        ),
     )
 
     # Contato
