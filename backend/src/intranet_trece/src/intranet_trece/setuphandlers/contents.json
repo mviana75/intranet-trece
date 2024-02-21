@@ -5,11 +5,10 @@
     "id": "images",
     "title": "Images",
     "description": "Image bank.",
+    "_transitions": [],
     "_allowed_types": [
       "Image"
     ],
-
-    
     "exclude_from_nav": true
   },
   {
@@ -20,6 +19,36 @@
     "description": "",
     "_image": "images/plone-foundation.png",
     "_transitions": [],
+    "exclude_from_nav": false
+  },
+  {
+    "_parent": "",
+    "type": "Document",
+    "id": "estrutura",
+    "title": "Estrutura",
+    "description": "Estrutura do TRE-CE",
+    "_transitions": [],
+    "_allowed_types": ["Area"],
+    "exclude_from_nav": false
+  },
+  {
+    "_parent": "",
+    "type": "Document",
+    "id": "colaboradores",
+    "title": "Colaboradores",
+    "description": "Colaboradores do TRE-CE",
+    "_transitions": [],
+    "_permissions": {
+      "intranet_trece: Add Pessoa": [
+        "Site Administrator",
+        "Manager",
+        "Editor",
+        "Contributor"
+      ]
+    },
+    "_allowed_types": [
+      "Pessoa"
+    ],
     "exclude_from_nav": false
   }
 ]

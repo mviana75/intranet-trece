@@ -18,4 +18,28 @@
         />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      profile="intranet_trece:default"
+      source="20240220002"
+      destination="20240221001"
+      >
+    <genericsetup:upgradeDepends
+        title="Alterar tipo de conteúdo pessoa"
+        import_steps="typeinfo"
+        />
+    <genericsetup:upgradeDepends
+        title="Aplica permissionamento para tipo de conteúdo pessoa"
+        import_steps="rolemap"
+        />
+    <upgradeStep
+        title="Cria áreas para tipos de conteúdo Área e Pessoa"
+        handler=".v20240220001.cria_estrutura"
+        />
+    <upgradeStep
+        title="Atualiza o permissionamento da pasta de colaboradores"
+        handler=".v20240221001.alterar_permissionamento_colaboradores"
+        />
+  </genericsetup:upgradeSteps>
+
+
 </configure>
