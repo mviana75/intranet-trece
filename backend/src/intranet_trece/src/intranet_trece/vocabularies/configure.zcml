@@ -6,5 +6,8 @@
       component=".industries_vocabulary"
       />
    -->
-
+  <utility
+      name="intranet_trece.tipos_email"
+      component=".email.tipos_vocabulary"
+      />
 </configure>

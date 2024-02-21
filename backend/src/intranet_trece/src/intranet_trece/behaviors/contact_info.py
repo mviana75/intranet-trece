@@ -15,9 +15,15 @@ class IContactInfo(model.Schema):
         "contato",
         _("Contato"),
         fields=[
+            "tipo_email",
             "email",
             "ramal",
         ],
+    )
+    tipo_email = schema.Choice(
+        title=_("Tipo de E-mail"),
+        required=False,
+        vocabulary="intranet_trece.tipos_email"
     )
     email = Email(
         title=_("Email"),
