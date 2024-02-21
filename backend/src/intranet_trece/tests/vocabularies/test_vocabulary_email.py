@@ -21,6 +21,7 @@ class TestVocabTiposEmail:
         [
             "corporativo",
             "pessoal",
+            "outro",
         ],
     )
     def test_token(self, token):

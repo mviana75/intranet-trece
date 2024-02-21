@@ -23,7 +23,7 @@ class IContactInfo(model.Schema):
     tipo_email = schema.Choice(
         title=_("Tipo de E-mail"),
         required=False,
-        vocabulary="intranet_trece.tipos_email"
+        vocabulary="intranet_trece.tipos_email",
     )
     email = Email(
         title=_("Email"),

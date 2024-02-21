@@ -8,6 +8,7 @@ from zope.schema.vocabulary import SimpleVocabulary
 TIPOS = [
     ("corporativo", _("Corporativo")),
     ("pessoal", _("Pessoal")),
+    ("outro", _("Outro")),
 ]
 
 
