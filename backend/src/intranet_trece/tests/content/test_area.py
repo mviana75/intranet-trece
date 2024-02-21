@@ -130,3 +130,26 @@ class TestArea:
                 ramal="2022",
             )
         assert area.exclude_from_nav is True
+
+    def test_subscriber_modified(self, portal):
+        from zope.event import notify
+        from zope.lifecycleevent import ObjectModifiedEvent
+
+        container = portal["estrutura"]
+        with api.env.adopt_roles(["Manager"]):
+            area = api.content.create(
+                container=container,
+                type=CONTENT_TYPE,
+                title="Comunicação",
+                description="",
+                email="secom@tre-ce.jus.br",
+                ramal="2022",
+            )
+        assert area.exclude_from_nav is True
+        # Agora, editamos o conteúdo, adicionando a
+        # informação de predio
+        with api.env.adopt_roles(["Manager"]):
+            area.description = "Área de Comunicação"
+            notify(ObjectModifiedEvent(area))
+
+        assert area.exclude_from_nav is False
