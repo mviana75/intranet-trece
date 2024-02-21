@@ -20,8 +20,8 @@
 
   <genericsetup:upgradeSteps
       profile="intranet_trece:default"
-      source="20240220002"
-      destination="20240221001"
+      source="20240221001"
+      destination="20240221002"
       >
     <genericsetup:upgradeDepends
         title="Alterar tipo de conteúdo pessoa"
@@ -38,6 +38,10 @@
     <upgradeStep
         title="Atualiza o permissionamento da pasta de colaboradores"
         handler=".v20240221001.alterar_permissionamento_colaboradores"
+        />
+    <upgradeStep
+        title="Atualiza o permissionamento da pasta de estrutura"
+        handler=".v20240221002.alterar_permissionamento_estrutura"
         />
   </genericsetup:upgradeSteps>
 

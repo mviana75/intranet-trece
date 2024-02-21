@@ -28,6 +28,14 @@
     "title": "Estrutura",
     "description": "Estrutura do TRE-CE",
     "_transitions": [],
+    "_permissions": {
+      "intranet_trece: Add Area": [
+        "Site Administrator",
+        "Manager",
+        "Editor",
+        "Contributor"
+      ]
+    },
     "_allowed_types": ["Area"],
     "exclude_from_nav": false
   },
