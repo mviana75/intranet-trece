@@ -103,3 +103,30 @@ class TestArea:
         with api.env.adopt_roles(["Reviewer", "Member"]):
             api.content.transition(content, "publish_internally")
         assert api.content.get_state(content) == "internally_published"        
+
+    def test_subscriber_added_with_description_value(self, portal):
+        container = portal["estrutura"]
+        with api.env.adopt_roles(["Manager"]):
+            area = api.content.create(
+                container=container,
+                type=CONTENT_TYPE,
+                title="Comunicação",
+                description="Área de Comunicação",
+                email="secom@tre-ce.jus.br",
+                tipo_email="corporativo",
+                ramal="2022",
+            )
+        assert area.exclude_from_nav is False
+
+    def test_subscriber_added_without_description_value(self, portal):
+        container = portal["estrutura"]
+        with api.env.adopt_roles(["Manager"]):
+            area = api.content.create(
+                container=container,
+                type=CONTENT_TYPE,
+                title="Comunicação",
+                description="",
+                email="secom@tre-ce.jus.br",
+                ramal="2022",
+            )
+        assert area.exclude_from_nav is True

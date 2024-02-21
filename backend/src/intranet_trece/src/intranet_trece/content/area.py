@@ -4,7 +4,6 @@ from zope import schema
 from zope.interface import implementer
 
 
-
 class IArea(Schema):
     """Definição de uma Área no TRE-CE."""
 
