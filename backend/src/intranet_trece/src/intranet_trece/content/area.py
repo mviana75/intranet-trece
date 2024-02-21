@@ -16,29 +16,6 @@ class IArea(Schema):
     title = schema.TextLine(title="Nome da Área", required=True)
     description = schema.Text(title="Descrição", required=False)
 
-    model.fieldset(
-        "contato",
-        _("Contato"),
-        fields=[
-            "email",
-            "ramal",
-        ],
-    )
-    email = Email(
-        title=_("Email"),
-        required=True,
-    )
-    ramal = schema.TextLine(
-        title=("Ramal"),
-        required=True,
-        constraint=validadores.is_valid_extension,
-    )
-
-    @invariant
-    def validar_dados(data):
-        """Validar dados enviados pelo usuário."""
-        validadores.validar_dados(data)
-
 
 @implementer(IArea)
 class Area(Container):

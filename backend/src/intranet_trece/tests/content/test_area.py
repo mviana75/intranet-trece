@@ -39,6 +39,7 @@ class TestArea:
     @pytest.mark.parametrize(
         "behavior",
         [
+            "intranet_trece.contact_info",
             "plone.namefromtitle",
             "plone.shortname",
             "plone.excludefromnavigation",

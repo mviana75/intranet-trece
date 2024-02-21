@@ -3,4 +3,11 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     >
 
+  <plone:behavior
+      name="intranet_trece.contact_info"
+      title="Contact Information"
+      description="Add e-mail and ramal fields to a contact."
+      provides=".contact_info.IContactInfo"
+      />
+
 </configure>

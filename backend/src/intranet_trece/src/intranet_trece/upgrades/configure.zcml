@@ -45,5 +45,15 @@
         />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      profile="intranet_trece:default"
+      source="20240221002"
+      destination="20240221003"
+      >
+    <genericsetup:upgradeDepends
+        title="Aplicar o behavior intranet_trece.contact_info"
+        import_steps="typeinfo"
+        />
+  </genericsetup:upgradeSteps>
 
 </configure>
