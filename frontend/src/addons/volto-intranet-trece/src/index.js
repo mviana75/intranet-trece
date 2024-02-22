@@ -1,5 +1,6 @@
 // Visoes
 import AreaView from './components/View/AreaView';
+import PessoaView from './components/View/PessoaView';
 
 const applyConfig = (config) => {
   config.settings = {
@@ -11,6 +12,7 @@ const applyConfig = (config) => {
   config.views.contentTypesViews = {
     ...config.views.contentTypesViews,
     Area: AreaView,
+    Pessoa: PessoaView,
   };
   return config;
 };

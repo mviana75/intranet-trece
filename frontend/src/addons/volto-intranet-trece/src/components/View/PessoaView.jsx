@@ -1,20 +1,21 @@
 /**
- * AreaView view component.
- * @module components/View/AreaView
+ * PessoaView view component.
+ * @module components/View/PessoaView
  */
+
 import React from 'react';
 import PropTypes from 'prop-types';
-import { List, Table } from 'semantic-ui-react';
 import { Icon, UniversalLink } from '@plone/volto/components';
 import houseSVG from '@plone/volto/icons/home.svg';
+import { List, Table } from 'semantic-ui-react';
 
 /**
- * AreaView view component class.
- * @function AreaView
+ * PessoaView view component class.
+ * @function PessoaView
  * @params {object} content Content object.
  * @returns {string} Markup of the component.
  */
-const AreaView = (props) => {
+const PessoaView = (props) => {
   const { content } = props;
 
   return (
@@ -64,8 +65,8 @@ const AreaView = (props) => {
         </Table>
       </div>
       <List>
-        {content.items &&
-          content.items.map(function (area, i) {
+        {content.area &&
+          content.area.map(function (area, i) {
             return (
               <List.Item key={i}>
                 <Icon name={houseSVG} size="24px" />
@@ -90,17 +91,24 @@ const AreaView = (props) => {
  * @property {Object} propTypes Property types.
  * @static
  */
-AreaView.propTypes = {
+PessoaView.propTypes = {
   content: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.string,
     email: PropTypes.string,
     ramal: PropTypes.string,
     tipo_email: PropTypes.shape({
       title: PropTypes.string.isRequired,
       token: PropTypes.string.isRequired,
     }),
+    area: PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        '@id': PropTypes.string.isRequired,
+      }),
+    ),
   }).isRequired,
 };
 
-export default AreaView;
+export default PessoaView;

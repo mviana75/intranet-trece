@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-02-20 14:41+0000\n"
+"POT-Creation-Date: 2024-02-22 16:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,26 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: intranet_trece\n"
+
+#: intranet_trece/src/intranet_trece/content/pessoa.py:16
+msgid "Biografia"
+msgstr ""
+
+#: intranet_trece/src/intranet_trece/behaviors/contact_info.py:16
+msgid "Contato"
+msgstr ""
+
+#: intranet_trece/src/intranet_trece/vocabularies/email.py:9
+msgid "Corporativo"
+msgstr ""
+
+#: intranet_trece/src/intranet_trece/behaviors/contact_info.py:29
+msgid "Email"
+msgstr ""
+
+#: intranet_trece/src/intranet_trece/content/pessoa.py:20
+msgid "Estrutura"
+msgstr ""
 
 #: intranet_trece/src/intranet_trece/profiles.zcml:22
 msgid "Initial content for our website."
@@ -33,12 +53,36 @@ msgstr ""
 msgid "Intranet TRE-CE: Uninstall"
 msgstr ""
 
+#: intranet_trece/src/intranet_trece/content/pessoa.py:15
+msgid "Nome Completo"
+msgstr ""
+
+#: intranet_trece/src/intranet_trece/validadores.py:10
+msgid "O valor está incorreto"
+msgstr ""
+
+#: intranet_trece/src/intranet_trece/vocabularies/email.py:11
+msgid "Outro"
+msgstr ""
+
 #: intranet_trece/src/intranet_trece/profiles/default/types/Pessoa.xml
 msgid "Pessoa"
 msgstr ""
 
+#: intranet_trece/src/intranet_trece/vocabularies/email.py:10
+msgid "Pessoal"
+msgstr ""
+
 #: intranet_trece/src/intranet_trece/profiles.zcml:13
 msgid "Policy package to install our site"
+msgstr ""
+
+#: intranet_trece/src/intranet_trece/behaviors/contact_info.py:35
+msgid "Ramal"
+msgstr ""
+
+#: intranet_trece/src/intranet_trece/behaviors/contact_info.py:24
+msgid "Tipo de E-mail"
 msgstr ""
 
 #: intranet_trece/src/intranet_trece/profiles/default/types/Pessoa.xml
