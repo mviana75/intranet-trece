@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 import { List, Table } from 'semantic-ui-react';
 import { Icon, UniversalLink } from '@plone/volto/components';
 import houseSVG from '@plone/volto/icons/home.svg';
+import personSVG from '@plone/volto/icons/user.svg';
 
 /**
  * AreaView view component class.
@@ -63,6 +64,7 @@ const AreaView = (props) => {
           </Table.Body>
         </Table>
       </div>
+      <h2>Sub-Áreas</h2>
       <List>
         {content.items &&
           content.items.map(function (area, i) {
@@ -76,6 +78,25 @@ const AreaView = (props) => {
                     </UniversalLink>
                   </List.Header>
                   <List.Description>{area.description}</List.Description>
+                </List.Content>
+              </List.Item>
+            );
+          })}
+      </List>
+      <h2>Pessoas</h2>
+      <List>
+        {content.pessoas &&
+          content.pessoas.map(function (pessoa, i) {
+            return (
+              <List.Item key={i}>
+                <Icon name={personSVG} size="24px" />
+                <List.Content>
+                  <List.Header>
+                    <UniversalLink href={pessoa['@id']}>
+                      {pessoa.title}
+                    </UniversalLink>
+                  </List.Header>
+                  <List.Description>{pessoa.description}</List.Description>
                 </List.Content>
               </List.Item>
             );
@@ -100,6 +121,20 @@ AreaView.propTypes = {
       title: PropTypes.string.isRequired,
       token: PropTypes.string.isRequired,
     }),
+    items: PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        '@id': PropTypes.string.isRequired,
+      }),
+    ),
+    pessoas: PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        '@id': PropTypes.string.isRequired,
+      }),
+    ),
   }).isRequired,
 };
 

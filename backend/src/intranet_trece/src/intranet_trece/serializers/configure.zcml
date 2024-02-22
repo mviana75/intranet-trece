@@ -1,5 +1,5 @@
 <configure xmlns="http://namespaces.zope.org/zope">
 
-<adapter factory=".area.AreaJSONSerializer" />
+  <adapter factory=".area.AreaJSONSerializer" />
 
 </configure>
