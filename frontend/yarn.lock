@@ -1914,24 +1914,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@datapunt/matomo-tracker-js@npm:^0.3.1":
-  version: 0.3.1
-  resolution: "@datapunt/matomo-tracker-js@npm:0.3.1"
-  checksum: 731e5306c52308acc45fcc5767f21ad67d3290d35cdb1676541f2af75682d6b06e83f8b821bb407c61a1ff749ffd7a6cdea69cded50dfc0bab3e55b34b3b9abd
-  languageName: node
-  linkType: hard
-
-"@datapunt/matomo-tracker-react@npm:0.3.1":
-  version: 0.3.1
-  resolution: "@datapunt/matomo-tracker-react@npm:0.3.1"
-  dependencies:
-    "@datapunt/matomo-tracker-js": ^0.3.1
-  peerDependencies:
-    react: ">=16.8.6 <= 16.x.x"
-  checksum: ec3292464d12c9a25be133671a21953b83f2ca41787e166f5ef8af49e36e76d8e5ccd2282f5ab6023649ba4e04c1502728e2d15f35f9b6157c0d7d417b988010
-  languageName: node
-  linkType: hard
-
 "@discoveryjs/json-ext@npm:0.5.7, @discoveryjs/json-ext@npm:^0.5.3":
   version: 0.5.7
   resolution: "@discoveryjs/json-ext@npm:0.5.7"
@@ -1939,21 +1921,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-accordion-block@npm:*":
+"@eeacms/volto-accordion-block@npm:10.4.6":
   version: 10.4.6
   resolution: "@eeacms/volto-accordion-block@npm:10.4.6"
   dependencies:
     "@eeacms/volto-widget-theme-picker": "*"
   checksum: 7435b0cddbe7f3b611207e74c2e19bd04af4d2fde1b4439ad19941d10ea29f2f9aae2a0195e63a47ce01de72db27d2f9ce4382a774a82fff7ccc9c9585930013
-  languageName: node
-  linkType: hard
-
-"@eeacms/volto-matomo@npm:*":
-  version: 4.2.1
-  resolution: "@eeacms/volto-matomo@npm:4.2.1"
-  dependencies:
-    "@datapunt/matomo-tracker-react": 0.3.1
-  checksum: 0cc007e342cb4cc78c003a3b52cd200f6e2a3b52f022721544564fed0bc5b4d35705e4461867c533c581de17aec10a84d44a4cf657a2aed1dbb787651c8129f5
   languageName: node
   linkType: hard
 
@@ -2697,15 +2670,56 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kitconcept/volto-slider-block@npm:*":
-  version: 6.1.1
-  resolution: "@kitconcept/volto-slider-block@npm:6.1.1"
+"@kitconcept/volto-button-block@npm:2.3.1":
+  version: 2.3.1
+  resolution: "@kitconcept/volto-button-block@npm:2.3.1"
+  checksum: c8b2dd02d48b3db640784116c92e585267fda6bacf6a856233720e05bbffb9c89dace536176937b38c038b6bd24a452fb880538157f58da35423d558f29c90d2
+  languageName: node
+  linkType: hard
+
+"@kitconcept/volto-heading-block@npm:2.4.0":
+  version: 2.4.0
+  resolution: "@kitconcept/volto-heading-block@npm:2.4.0"
   dependencies:
-    deepmerge: 4.2.2
-    embla-carousel-react: ^8.0.0-rc15
+    react-contenteditable: 3.3.6
+  checksum: baf6814d34286eda9ced00bb8eb8a0683af9a6381a05e5f9d3fe1ccb51e02b37dedda79bb70a2749471084a5ba894620ca548ca9d30c4ca7364a2ef32812e9cd
+  languageName: node
+  linkType: hard
+
+"@kitconcept/volto-light-theme@npm:3.0.0":
+  version: 3.0.0
+  resolution: "@kitconcept/volto-light-theme@npm:3.0.0"
   peerDependencies:
-    "@plone/volto": ^17.0.0-alpha.21
-  checksum: e5a81af1df855333d6bf69649f620e75bd57a6b5a5a91c4e70e89fd9c2b9996b7a4d39229f39c4c60e785bc5a1efb1c224a9e078b85da1d1bcc6b71c8812e7dc
+    "@eeacms/volto-accordion-block": ^10.4.0
+    "@kitconcept/volto-button-block": ^2.3.1
+    "@kitconcept/volto-dsgvo-banner": ^1.3.0
+    "@kitconcept/volto-heading-block": ^2.4.0
+    "@kitconcept/volto-highlight-block": ^3.0.0
+    "@kitconcept/volto-introduction-block": ^1.0.0
+    "@kitconcept/volto-separator-block": ^4.0.0
+    "@kitconcept/volto-slider-block": ^6.1.0
+    "@plone/volto": ^17.12.1
+  checksum: 5964071ea1739f6a1bfdb4c530ebfd43d31706c612fb18ac3fc065dba8f0648e360dbf5927e62bca63246d4f0d819a381206107044cfa63219251a38bd18873d
+  languageName: node
+  linkType: hard
+
+"@kitconcept/volto-separator-block@npm:4.1.0":
+  version: 4.1.0
+  resolution: "@kitconcept/volto-separator-block@npm:4.1.0"
+  peerDependencies:
+    "@plone/volto": ">=16.0.0"
+  checksum: 3907a7eb7987a39907630ba0b46d1b8eb64a08008e0ad9b894d1347244d09f47c8daad398937cf5ea136697374d0c8352b825c8b2e7c4969367c8125275fdb79
+  languageName: node
+  linkType: hard
+
+"@kitconcept/volto-social-blocks@npm:1.0.0-alpha.4":
+  version: 1.0.0-alpha.4
+  resolution: "@kitconcept/volto-social-blocks@npm:1.0.0-alpha.4"
+  dependencies:
+    react-social-media-embed: ^2.3.5
+  peerDependencies:
+    "@plone/volto": ">=15.12.0"
+  checksum: 3f997bdf0ba8de35cab617e24512ee25c9a2cde1463a9ebd854ef44efa725a57e3fa816aae0f5af0346a5a4de611db5f0d11f0e98993db71a482df442f817c21
   languageName: node
   linkType: hard
 
@@ -2785,6 +2799,16 @@ __metadata:
   peerDependencies:
     webpack: ">=4.6.0"
   checksum: fee31c7f8c158c1cf987dee57e1a8e7b822decd004fd3c00895e30c6780584410d0199e44d10e7bf225ea30bed439404755272396d515d51a65f02e8e3ae1db0
+  languageName: node
+  linkType: hard
+
+"@mbarde/volto-image-crop-widget@npm:0.5.1":
+  version: 0.5.1
+  resolution: "@mbarde/volto-image-crop-widget@npm:0.5.1"
+  dependencies:
+    "@plone/scripts": "*"
+    react-image-crop: 10.0.9
+  checksum: 403a04fa7eef0fbbb2a903b5f6baedde2d0ee7500649e8d698d1a0a66d6fe718b9335b298a502bab510a06284155d7d9eef0a4f6d6c5301d8e4660699e6d62ac
   languageName: node
   linkType: hard
 
@@ -3103,7 +3127,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/scripts@npm:3.3.2, @plone/scripts@npm:^3.0.0":
+"@plone/scripts@npm:*, @plone/scripts@npm:3.3.2, @plone/scripts@npm:^3.0.0":
   version: 3.3.2
   resolution: "@plone/scripts@npm:3.3.2"
   dependencies:
@@ -3324,6 +3348,18 @@ __metadata:
     xmlrpc: 1.3.2
     yarnhook: 0.5.1
   checksum: cd8eccd0d33917aa9a96dda56ff5a44af459e3a804dd396da12722ae80ff6a00dabb767076f668012e0e206497cf067ed0febe7bb67bd6785b45f6d1d3119003
+  languageName: node
+  linkType: hard
+
+"@plonegovbr/volto-code-block@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@plonegovbr/volto-code-block@npm:2.1.0"
+  dependencies:
+    "@plone/scripts": "*"
+    prismjs: "*"
+  peerDependencies:
+    "@plone/volto": ">=15.12.0"
+  checksum: 9240955c7342fcdb7b4f0acf5651ad71a0e3ab6e20f560985bafa9c8207d3d5bdc2b296df4d0b96c9a69f80fbd6c934364d5d395e9cb5a373f04e2796c3d69ee
   languageName: node
   linkType: hard
 
@@ -5721,6 +5757,13 @@ __metadata:
   dependencies:
     "@types/yargs-parser": "*"
   checksum: 6a509db36304825674f4f00300323dce2b4d850e75819c3db87e9e9f213ac2c4c6ed3247a3e4eed6e8e45b3f191b133a356d3391dd694d9ea27a0507d914ef4c
+  languageName: node
+  linkType: hard
+
+"@types/youtube-player@npm:^5.5.5":
+  version: 5.5.11
+  resolution: "@types/youtube-player@npm:5.5.11"
+  checksum: 364c89396b2d8b233a0e6123ad69e0b3a3f18645b4e1bb1eed8d00fd18c6bf074eb4fab73446a4d8d5f5cedb3710f39b21ece396534bd4d60038b3be42b7965b
   languageName: node
   linkType: hard
 
@@ -8874,7 +8917,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:2.x, classnames@npm:^2.2.5, classnames@npm:^2.2.6":
+"classnames@npm:2.x, classnames@npm:^2.2.5, classnames@npm:^2.2.6, classnames@npm:^2.5.1":
   version: 2.5.1
   resolution: "classnames@npm:2.5.1"
   checksum: da424a8a6f3a96a2e87d01a432ba19315503294ac7e025f9fece656db6b6a0f7b5003bb1fbb51cbb0d9624d964f1b9bb35a51c73af9b2434c7b292c42231c1e5
@@ -9036,7 +9079,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clsx@npm:^1.0.4, clsx@npm:^1.1.1":
+"clsx@npm:^1.0.4, clsx@npm:^1.1.1, clsx@npm:^1.2.1":
   version: 1.2.1
   resolution: "clsx@npm:1.2.1"
   checksum: 30befca8019b2eb7dbad38cff6266cf543091dae2825c856a62a8ccf2c3ab9c2907c4d12b288b73101196767f66812365400a227581484a05f968b0307cfaf12
@@ -10201,7 +10244,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:2.6.9, debug@npm:^2.1.3, debug@npm:^2.2.0, debug@npm:^2.3.3, debug@npm:^2.6.0":
+"debug@npm:2.6.9, debug@npm:^2.1.3, debug@npm:^2.2.0, debug@npm:^2.3.3, debug@npm:^2.6.0, debug@npm:^2.6.6":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
   dependencies:
@@ -10338,13 +10381,6 @@ __metadata:
   version: 1.1.9
   resolution: "deep-object-diff@npm:1.1.9"
   checksum: ecd42455e4773f653595d28070295e7aaa8402db5f8ab21d0bec115a7cb4de5e207a5665514767da5f025c96597f1d3a0a4888aeb4dd49e03c996871a3aa05ef
-  languageName: node
-  linkType: hard
-
-"deepmerge@npm:4.2.2":
-  version: 4.2.2
-  resolution: "deepmerge@npm:4.2.2"
-  checksum: a8c43a1ed8d6d1ed2b5bf569fa4c8eb9f0924034baf75d5d406e47e157a451075c4db353efea7b6bcc56ec48116a8ce72fccf867b6e078e7c561904b5897530b
   languageName: node
   linkType: hard
 
@@ -11097,34 +11133,6 @@ __metadata:
     minimalistic-assert: ^1.0.1
     minimalistic-crypto-utils: ^1.0.1
   checksum: d56d21fd04e97869f7ffcc92e18903b9f67f2d4637a23c860492fbbff5a3155fd9ca0184ce0c865dd6eb2487d234ce9551335c021c376cd2d3b7cb749c7d10f4
-  languageName: node
-  linkType: hard
-
-"embla-carousel-react@npm:^8.0.0-rc15":
-  version: 8.0.0-rc23
-  resolution: "embla-carousel-react@npm:8.0.0-rc23"
-  dependencies:
-    embla-carousel: 8.0.0-rc23
-    embla-carousel-reactive-utils: 8.0.0-rc23
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.1 || ^18.0.0
-  checksum: 704f1e04aaebf8cffc3c665be8af251c0c18f7b78492ed1ef23dfc88a344f3d1e7bf9173a7f6fb8734e7b337901d377d80b3912b4ccad7de8f663af8fbd17a72
-  languageName: node
-  linkType: hard
-
-"embla-carousel-reactive-utils@npm:8.0.0-rc23":
-  version: 8.0.0-rc23
-  resolution: "embla-carousel-reactive-utils@npm:8.0.0-rc23"
-  peerDependencies:
-    embla-carousel: 8.0.0-rc23
-  checksum: da864c6b4042305e1c1a8f807b4b04f4ee8be1f4e791e711fa8a5247052789728ec2fc2016a83453e45b9f059a718bfe25ce984d88dfad50b38aaee5594e3b81
-  languageName: node
-  linkType: hard
-
-"embla-carousel@npm:8.0.0-rc23":
-  version: 8.0.0-rc23
-  resolution: "embla-carousel@npm:8.0.0-rc23"
-  checksum: f26080d082470f4c9191d823d726df4bf41442a62c98dba109b94b7facecfaea85fde94725fec96d2f845f2b6e300fdffc45d805ec130eb097ec83cf495f67b7
   languageName: node
   linkType: hard
 
@@ -12333,17 +12341,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-deep-equal@npm:3.1.3, fast-deep-equal@npm:^3.1.1, fast-deep-equal@npm:^3.1.3":
+  version: 3.1.3
+  resolution: "fast-deep-equal@npm:3.1.3"
+  checksum: e21a9d8d84f53493b6aa15efc9cfd53dd5b714a1f23f67fb5dc8f574af80df889b3bce25dc081887c6d25457cce704e636395333abad896ccdec03abaf1f3f9d
+  languageName: node
+  linkType: hard
+
 "fast-deep-equal@npm:^1.0.0":
   version: 1.1.0
   resolution: "fast-deep-equal@npm:1.1.0"
   checksum: 69b4c9534d9805f13a341aa72f69641d0b9ae3cc8beb25c64e68a257241c7bb34370266db27ae4fc3c4da0518448c01a5f587a096a211471c86a38facd9a1486
-  languageName: node
-  linkType: hard
-
-"fast-deep-equal@npm:^3.1.1, fast-deep-equal@npm:^3.1.3":
-  version: 3.1.3
-  resolution: "fast-deep-equal@npm:3.1.3"
-  checksum: e21a9d8d84f53493b6aa15efc9cfd53dd5b714a1f23f67fb5dc8f574af80df889b3bce25dc081887c6d25457cce704e636395333abad896ccdec03abaf1f3f9d
   languageName: node
   linkType: hard
 
@@ -16848,6 +16856,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"load-script@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "load-script@npm:1.0.0"
+  checksum: 8458e3f07b4a86f8d9d66e47a987811491a5d013af23ba7b371c6d3c9dc899885b072ccf65abf7874c10cb197d4975eacd8a7a125bfb38dbbcb267539f5dc1e9
+  languageName: node
+  linkType: hard
+
 "loader-runner@npm:^2.4.0":
   version: 2.4.0
   resolution: "loader-runner@npm:2.4.0"
@@ -20179,17 +20194,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prismjs@npm:*, prismjs@npm:^1.21.0":
+  version: 1.29.0
+  resolution: "prismjs@npm:1.29.0"
+  checksum: 007a8869d4456ff8049dc59404e32d5666a07d99c3b0e30a18bd3b7676dfa07d1daae9d0f407f20983865fd8da56de91d09cb08e6aa61f5bc420a27c0beeaf93
+  languageName: node
+  linkType: hard
+
 "prismjs@npm:1.27.0, prismjs@npm:~1.27.0":
   version: 1.27.0
   resolution: "prismjs@npm:1.27.0"
   checksum: 85c7f4a3e999073502cc9e1882af01e3709706369ec254b60bff1149eda701f40d02512acab956012dc7e61cfd61743a3a34c1bd0737e8dbacd79141e5698bbc
-  languageName: node
-  linkType: hard
-
-"prismjs@npm:^1.21.0":
-  version: 1.29.0
-  resolution: "prismjs@npm:1.29.0"
-  checksum: 007a8869d4456ff8049dc59404e32d5666a07d99c3b0e30a18bd3b7676dfa07d1daae9d0f407f20983865fd8da56de91d09cb08e6aa61f5bc420a27c0beeaf93
   languageName: node
   linkType: hard
 
@@ -20316,7 +20331,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:15.x, prop-types@npm:^15.0.0, prop-types@npm:^15.5.10, prop-types@npm:^15.5.7, prop-types@npm:^15.5.8, prop-types@npm:^15.6.0, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:15.8.1, prop-types@npm:15.x, prop-types@npm:^15.0.0, prop-types@npm:^15.5.10, prop-types@npm:^15.5.7, prop-types@npm:^15.5.8, prop-types@npm:^15.6.0, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.1, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -20887,6 +20902,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-contenteditable@npm:3.3.6":
+  version: 3.3.6
+  resolution: "react-contenteditable@npm:3.3.6"
+  dependencies:
+    fast-deep-equal: ^3.1.3
+    prop-types: ^15.7.1
+  peerDependencies:
+    react: ">=16.3"
+  checksum: 3ff8b78e63ddcdc4b93cf19ec022872116d2d8f672b2ff1b9ae12e9d807b88530d2b17bef2de9ab8a61a182bd9338388f11356cf1681d7c7894642c37be65def
+  languageName: node
+  linkType: hard
+
 "react-cookie@npm:4.1.1":
   version: 4.1.1
   resolution: "react-cookie@npm:4.1.1"
@@ -21086,6 +21113,27 @@ __metadata:
   version: 3.2.2
   resolution: "react-fast-compare@npm:3.2.2"
   checksum: 2071415b4f76a3e6b55c84611c4d24dcb12ffc85811a2840b5a3f1ff2d1a99be1020d9437ee7c6e024c9f4cbb84ceb35e48cf84f28fcb00265ad2dfdd3947704
+  languageName: node
+  linkType: hard
+
+"react-html-props@npm:^2.0.3":
+  version: 2.0.9
+  resolution: "react-html-props@npm:2.0.9"
+  peerDependencies:
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+    react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+  checksum: fd2df4da539d8f0a692efe6477917911603ad893b384111160c2e12fdaed6e43301339e62df3719fd5570e1876599a2d77a21a26715539616583824ce89516fc
+  languageName: node
+  linkType: hard
+
+"react-image-crop@npm:10.0.9":
+  version: 10.0.9
+  resolution: "react-image-crop@npm:10.0.9"
+  dependencies:
+    clsx: ^1.2.1
+  peerDependencies:
+    react: ">=16.13.1"
+  checksum: 52f2644f727851b323b62f333943b9537a626c7d4e1874441f5b5df0946aa3440d37159de260060556c42468c84d60db66ee8f2c4507c74127531dde68c7d5e4
   languageName: node
   linkType: hard
 
@@ -21488,6 +21536,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-social-media-embed@npm:^2.3.5":
+  version: 2.5.9
+  resolution: "react-social-media-embed@npm:2.5.9"
+  dependencies:
+    "@types/youtube-player": ^5.5.5
+    classnames: ^2.5.1
+    react-html-props: ^2.0.3
+    react-sub-unsub: ^2.2.1
+    react-twitter-embed: ^4.0.4
+    react-youtube: ^10.1.0
+  peerDependencies:
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+    react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+  checksum: 1130010898ad8169362566b8a8f5b7ca63b991d36893a8bfe34c2f28ee65a8d10b51967b5388fdc96e983addbb5de1def51e8b3d3d737b4957899d7322170abb
+  languageName: node
+  linkType: hard
+
 "react-sortable-hoc@npm:2.0.0":
   version: 2.0.0
   resolution: "react-sortable-hoc@npm:2.0.0"
@@ -21500,6 +21565,16 @@ __metadata:
     react: ^16.3.0 || ^17.0.0
     react-dom: ^16.3.0 || ^17.0.0
   checksum: c4930856eb8e9be638220423d452ddaab834aa43ff76069eeb057c6a5f1d0538f9e43c17bedd34bfd2a66ff4aa1e289557821d792db73a42ebf061bd1c92a423
+  languageName: node
+  linkType: hard
+
+"react-sub-unsub@npm:^2.2.1":
+  version: 2.2.7
+  resolution: "react-sub-unsub@npm:2.2.7"
+  peerDependencies:
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+    react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+  checksum: ea4c68a23c5fa1e62b0ccc1210c5f9e907df7619c1650d5ddabb4d123d1dca854576182573264c156a4b74630ce8bdd1281c60c53d8da7e612d33d03297f6e23
   languageName: node
   linkType: hard
 
@@ -21575,6 +21650,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-twitter-embed@npm:^4.0.4":
+  version: 4.0.4
+  resolution: "react-twitter-embed@npm:4.0.4"
+  dependencies:
+    scriptjs: ^2.5.9
+  peerDependencies:
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: cdb3c5bd04c4da0efa767476be47c0a3865fb6335f2a1b9e242170167b51615c38164223278cef60c77143c4bac27ba582cbea054d0af3f138104fa5ec537c4c
+  languageName: node
+  linkType: hard
+
 "react-virtualized@npm:9.22.3":
   version: 9.22.3
   resolution: "react-virtualized@npm:9.22.3"
@@ -21638,6 +21725,19 @@ __metadata:
     react: ">=0.14"
     react-with-direction: ^1.3.1
   checksum: 28c41eb4de3304097f46b83bd37ff3294e9e15dfc3ce867de12ab17e93bcdbdbf3bcdb96c4e5a4e15d15cff20d8b7d299dad630f43ef7e7277195378017c10f2
+  languageName: node
+  linkType: hard
+
+"react-youtube@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "react-youtube@npm:10.1.0"
+  dependencies:
+    fast-deep-equal: 3.1.3
+    prop-types: 15.8.1
+    youtube-player: 5.5.2
+  peerDependencies:
+    react: ">=0.14.1"
+  checksum: 514678c2a2038f8821e67cd6f95a715cacf8ecc22c02171abeb187e3265dd606c231c15082d42ebccdca08cb18909e26f12c0867dfe24699d5e59f5c6cbc42d4
   languageName: node
   linkType: hard
 
@@ -22841,6 +22941,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"scriptjs@npm:^2.5.9":
+  version: 2.5.9
+  resolution: "scriptjs@npm:2.5.9"
+  checksum: fc84cb6b60b6fb9aa6f1b3bc59fc94b233bd5241ed3a04233579014382b5eb60640269c87d8657902acc09f9b785ee33230c218627cea00e653564bda8f5acb6
+  languageName: node
+  linkType: hard
+
 "scroll-into-view-if-needed@npm:^2.2.20":
   version: 2.2.31
   resolution: "scroll-into-view-if-needed@npm:2.2.31"
@@ -23299,6 +23406,13 @@ __metadata:
     mrmime: ^2.0.0
     totalist: ^3.0.0
   checksum: 6853384a51d6ee9377dd657e2b257e0e98b29abbfbfa6333e105197f0f100c8c56a4520b47028b04ab1833cf2312526206f38fcd4f891c6df453f40da1a15a57
+  languageName: node
+  linkType: hard
+
+"sister@npm:^3.0.0":
+  version: 3.0.2
+  resolution: "sister@npm:3.0.2"
+  checksum: 8a1eb9d20a0bc7d05b723f59f4e2b022c777c152119f69175d3ad1a50e16161d2f084d3acc69106454bfcffd8392b4d2153fa2d2c0c5be3991cfb7acbf627c4a
   languageName: node
   linkType: hard
 
@@ -26131,10 +26245,15 @@ __metadata:
   resolution: "volto-intranet-trece@workspace:src/addons/volto-intranet-trece"
   dependencies:
     "@babel/eslint-parser": 7.22.15
-    "@eeacms/volto-accordion-block": "*"
-    "@eeacms/volto-matomo": "*"
-    "@kitconcept/volto-slider-block": "*"
+    "@eeacms/volto-accordion-block": 10.4.6
+    "@kitconcept/volto-button-block": 2.3.1
+    "@kitconcept/volto-heading-block": 2.4.0
+    "@kitconcept/volto-light-theme": 3.0.0
+    "@kitconcept/volto-separator-block": 4.1.0
+    "@kitconcept/volto-social-blocks": 1.0.0-alpha.4
+    "@mbarde/volto-image-crop-widget": 0.5.1
     "@plone/scripts": ^3.0.0
+    "@plonegovbr/volto-code-block": 2.1.0
     eslint: 8.49.0
     eslint-config-prettier: 9.0.0
     eslint-config-react-app: 7.0.1
@@ -27130,6 +27249,17 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: f77b3d8d00310def622123df93d4ee654fc6a0096182af8bd60679ddcdfb3474c56c6c7190817c84a2785648cdee9d721c0154eb45698c62176c322fb46fc700
+  languageName: node
+  linkType: hard
+
+"youtube-player@npm:5.5.2":
+  version: 5.5.2
+  resolution: "youtube-player@npm:5.5.2"
+  dependencies:
+    debug: ^2.6.6
+    load-script: ^1.0.0
+    sister: ^3.0.0
+  checksum: 42693af5d7cef728fb9d60f31e79bb9551fc6ec594fdcec45faa7b54f5b5f9800d3cda591dcc57ed5e6fa201b53a08571f776fbe4df919759b05e5a25aec9754
   languageName: node
   linkType: hard
 

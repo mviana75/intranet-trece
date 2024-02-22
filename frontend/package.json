@@ -169,5 +169,5 @@
     "react-error-overlay": "6.0.9"
   },
   "packageManager": "yarn@3.2.3",
-  "theme": "volto-intranet-trece"
+  "theme": "@kitconcept/volto-light-theme"
 }

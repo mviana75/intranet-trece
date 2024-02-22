@@ -1,8 +1,8 @@
 from intranet_trece import logger
 from intranet_trece.content.area import Area
+from plone import api
 from zope.lifecycleevent import ObjectAddedEvent
 from zope.lifecycleevent import ObjectModifiedEvent
-from plone import api
 
 
 def _update_excluded_from_nav(obj: Area):
@@ -10,6 +10,7 @@ def _update_excluded_from_nav(obj: Area):
     description = obj.description
     obj.exclude_from_nav = False if description else True
     logger.info(f"Atualizado o campo excluded_from_nav para {obj.title}")
+
 
 def _create_user_groups(obj: Area):
     """Create user group for area"""
@@ -25,12 +26,14 @@ def _create_user_groups(obj: Area):
     api.group.grant_roles(group=editors, roles=["Editor"], obj=obj)
     logger.info(
         f"Granted role of Editor to {uuid}_editors group on {obj.absolute_url()}"
-    )    
+    )
+
 
 def added(obj: Area, event: ObjectAddedEvent):
     """Post creation handler for Area."""
     _update_excluded_from_nav(obj)
     _create_user_groups(obj)
+
 
 def modified(obj: Area, event: ObjectModifiedEvent):
     """Post modified handler for Area."""

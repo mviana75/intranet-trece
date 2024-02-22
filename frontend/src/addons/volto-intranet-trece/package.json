@@ -47,12 +47,22 @@
   },
   "addons": [
     "@eeacms/volto-accordion-block",
-    "@kitconcept/volto-slider-block",
-    "@eeacms/volto-matomo"
+    "@kitconcept/volto-button-block",
+    "@kitconcept/volto-heading-block",
+    "@kitconcept/volto-separator-block",
+    "@plonegovbr/volto-code-block",
+    "@kitconcept/volto-social-blocks",
+    "@mbarde/volto-image-crop-widget",
+    "@kitconcept/volto-light-theme"
   ],
   "dependencies": {
-    "@eeacms/volto-accordion-block": "*",
-    "@eeacms/volto-matomo": "*",
-    "@kitconcept/volto-slider-block": "*"
+    "@eeacms/volto-accordion-block": "10.4.6",
+    "@kitconcept/volto-button-block": "2.3.1",
+    "@kitconcept/volto-heading-block": "2.4.0",
+    "@kitconcept/volto-light-theme": "3.0.0",
+    "@kitconcept/volto-separator-block": "4.1.0",
+    "@kitconcept/volto-social-blocks": "1.0.0-alpha.4",
+    "@mbarde/volto-image-crop-widget": "0.5.1",
+    "@plonegovbr/volto-code-block": "2.1.0"
   }
 }
