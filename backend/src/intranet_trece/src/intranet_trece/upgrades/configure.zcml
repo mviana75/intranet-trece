@@ -56,4 +56,31 @@
         />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      profile="intranet_trece:default"
+      source="20240221003"
+      destination="20240222001"
+      >
+    <genericsetup:upgradeDepends
+        title="Adiciona o indice de area"
+        import_steps="catalog"
+        />
+    <upgradeStep
+        title="Reindexa o tipo pessoa"
+        handler=".v20240222001.reindexa_pessoa"
+        />
+  </genericsetup:upgradeSteps>
+
+
+  <genericsetup:upgradeSteps
+      profile="intranet_trece:default"
+      source="20240222001"
+      destination="20240222002"
+      >
+    <genericsetup:upgradeDepends
+        title="Adiciona filtro por Área"
+        import_steps="plone.app.registry"
+        />
+  </genericsetup:upgradeSteps>
+
 </configure>
